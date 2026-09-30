@@ -1,10 +1,7 @@
 # IPL-Cricket-Performance-Intelligence-Dashboard
 Interactive IPL Cricket Performance Intelligence Dashboard built using Power BI, Excel and DAX.
-# 🏏 IPL Cricket Performance Intelligence Dashboard
 
-An interactive Dashboard developed to analyse IPL matches, team performance, player achievements and season-wise championship insights.
-
-The project demonstrates how multiple source files can be transformed into a structured analytical model and presented through an interactive three-page Power BI dashboard.
+An interactive Dashboard developed to analyse IPL matches, team performance, player achievements and season-wise championship insights. The project demonstrates how multiple source files can be transformed into a structured analytical model and presented through an interactive three-page Power BI dashboard.
 
 ---
 
@@ -26,19 +23,18 @@ The project also demonstrates data preparation, data modelling, DAX-based calcul
 
 | Area | Details |
 |---|---|
-| 🏏 Matches | 1,095 IPL matches |
-| 📅 Seasons | 2008–2024 |
-| 📄 Source Files | Multiple Excel datasets |
-| 📈 Dashboard Pages | 3 |
-| 🛠️ Primary Tool | Power BI |
-| 🔢 Calculation | DAX |
-| 📑 Data Preparation | Excel / Power Query |
+| Seasons | 2008–2026 |
+| Source Files | Multiple Excel datasets |
+| Dashboard Pages | 3 |
+| Primary Tool | Power BI |
+| Calculation | DAX |
+| Data Preparation | Excel / Power Query |
 
 ---
 
 # 📌 Dashboard Pages
 
-## 1️⃣ Match Intelligence
+## 1) Match Intelligence
 
 The first page provides an overview of IPL match-level information.
 
