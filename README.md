@@ -1,2 +1,232 @@
 # IPL-Cricket-Performance-Intelligence-Dashboard
 Interactive IPL Cricket Performance Intelligence Dashboard built using Power BI, Excel and DAX.
+# 🏏 IPL Cricket Performance Intelligence Dashboard
+
+An interactive Dashboard developed to analyse IPL matches, team performance, player achievements and season-wise championship insights.
+
+The project demonstrates how multiple source files can be transformed into a structured analytical model and presented through an interactive three-page Power BI dashboard.
+
+---
+
+## Project Objective
+
+To build an interactive analytical dashboard that transforms multiple IPL datasets into meaningful insights on:
+
+- Match performance
+- Team performance
+- Player achievements
+- Season-wise awards
+- IPL championship history
+
+The project also demonstrates data preparation, data modelling, DAX-based calculations, interactive filtering, navigation and dynamic image integration.
+
+---
+
+## Project Overview
+
+| Area | Details |
+|---|---|
+| 🏏 Matches | 1,095 IPL matches |
+| 📅 Seasons | 2008–2024 |
+| 📄 Source Files | Multiple Excel datasets |
+| 📈 Dashboard Pages | 3 |
+| 🛠️ Primary Tool | Power BI |
+| 🔢 Calculation | DAX |
+| 📑 Data Preparation | Excel / Power Query |
+
+---
+
+# 📌 Dashboard Pages
+
+## 1️⃣ Match Intelligence
+
+The first page provides an overview of IPL match-level information.
+
+### Key features
+
+- Total Matches KPI
+- Season analysis
+- Match type filtering
+- City filtering
+- Match result analysis
+- Venue analysis
+- Top venue insights
+- Interactive slicers
+- Page navigation
+- Team / location-based visualisation
+
+---
+
+## 2️⃣ Team Performance
+
+The second page focuses on team-level performance using prepared team summary data.
+
+### Key features
+
+- Home Wins
+- Away Wins
+- Home Matches
+- Away Matches
+- Home Win Percentage
+- Away Win Percentage
+- Home City
+- State
+- Team Short Name
+- Trophy Winner information
+- Team-level filtering
+- Map-based analysis
+
+---
+
+## 3️⃣ Player & Season Intelligence
+
+The third page provides season-driven player and championship insights.
+
+### Key features
+
+### 🟠 Orange Cap
+
+Displays the Orange Cap winner based on the selected season, including:
+
+- Player
+- Team
+- Runs
+- Strike Rate
+- Average
+- Highest Score
+- 50s / 100s
+- 4s / 6s
+
+### 🟣 Purple Cap
+
+Displays the Purple Cap winner based on the selected season, including:
+
+- Player
+- Team
+- Matches
+- Wickets
+
+### 🏆 Season Awards
+
+- Player of the Tournament
+- Final Man of the Match
+
+### 🏆 IPL Championship
+
+- Champion
+- Runner-up
+- Winning Captain
+- Final Venue
+
+---
+
+# 🗂️ Data Sources
+
+The project uses multiple IPL-related source files.
+
+### Match Data
+
+Contains match-level information such as:
+
+- Season
+- City
+- Date
+- Match Type
+- Teams
+- Toss
+- Winner
+- Result
+- Venue
+- Result Margin
+
+### Team Performance Data
+
+Contains:
+
+- Team
+- Home Wins
+- Away Wins
+- Home Matches
+- Away Matches
+- Home Win %
+- Away Win %
+- Home City
+- State
+- Short Name
+- Trophy Winner
+
+### IPL Winners & Runners
+
+Contains:
+
+- Season
+- Winner
+- Runner-up
+- Winning Captain
+- Final Man of the Match
+- Player of the Tournament
+- Venue
+
+### Orange Cap History
+
+Contains season-wise Orange Cap statistics including:
+
+- Player
+- Team
+- Innings
+- Runs
+- Highest Score
+- Average
+- Strike Rate
+- 50s
+- 100s
+- 4s
+- 6s
+
+### Purple Cap History
+
+Contains:
+
+- Season
+- Player
+- Team
+- Matches
+- Wickets
+
+---
+
+# 🔄 Data Preparation & Modelling
+
+Multiple source files were imported into Power BI and prepared for analysis.
+
+### Key steps
+
+1. Imported multiple Excel source files.
+2. Standardised team names.
+3. Selected relevant columns.
+4. Created supporting/reference tables.
+5. Created a `DimSeason` table for season-based analysis.
+6. Established relationships between relevant tables.
+7. Created DAX measures for dynamic KPIs.
+8. Connected slicers with report visuals.
+9. Implemented page navigation and bookmarks.
+10. Integrated image URLs for player/team visuals.
+
+---
+
+# 🧩 Data Model
+
+A dedicated `DimSeason` table was used to provide a consistent season selection for the player and championship analysis.
+
+The model separates different levels of information rather than forcing unrelated source tables into a single dataset.
+
+### Example
+
+```text
+                 DimSeason
+                     │
+        ┌────────────┼────────────┐
+        │            │            │
+     Matches     Orange Cap   Purple Cap
+                                  │
+                       Winners & Runners
