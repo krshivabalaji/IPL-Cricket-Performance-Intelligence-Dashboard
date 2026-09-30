@@ -32,7 +32,7 @@ The project also demonstrates data preparation, data modelling, DAX-based calcul
 
 ---
 
-# 📌 Dashboard Pages
+# Dashboard Pages
 
 ## 1) Match Intelligence
 
@@ -42,18 +42,20 @@ The first page provides an overview of IPL match-level information.
 
 - Total Matches KPI
 - Season analysis
+- Venue and City analysis
+- Match result analysis
+- Top venue insights
+- Toss decision analysis
+- Interactive slicers
 - Match type filtering
 - City filtering
-- Match result analysis
-- Venue analysis
-- Top venue insights
-- Interactive slicers
 - Page navigation
-- Team / location-based visualisation
+
+<img width="842" height="484" alt="Screenshot 2026-09-29 115506" src="https://github.com/user-attachments/assets/60d53a64-1405-4151-aaa5-237e007892cd" />
 
 ---
 
-## 2️⃣ Team Performance
+## 2) Team Performance
 
 The second page focuses on team-level performance using prepared team summary data.
 
@@ -67,7 +69,6 @@ The second page focuses on team-level performance using prepared team summary da
 - Away Win Percentage
 - Home City
 - State
-- Team Short Name
 - Trophy Winner information
 - Team-level filtering
 - Map-based analysis
