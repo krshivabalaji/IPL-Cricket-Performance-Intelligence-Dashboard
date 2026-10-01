@@ -336,6 +336,7 @@ The image URL is associated with the corresponding player or team and can be dis
 - Runner-up team logo
 
 This approach keeps the report lightweight while allowing visuals to respond dynamically to the selected season.
+
 ---
 # UI & Dashboard Integration
 
@@ -472,9 +473,9 @@ Potential future improvements include:
 - Drill-through pages for detailed player/team analysis
 ---
 
-##Author
+## Author
 
-#Shivabalaji K R
+# Shivabalaji K R
 
 Technical Business Analyst and Solution Engineer
 Power BI • DAX • SQL • Data Analysis
