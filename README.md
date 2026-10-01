@@ -230,8 +230,7 @@ The model separates different levels of information rather than forcing unrelate
         │            │            │
      Winners     Orange Cap   Purple Cap
     & Runners
-
-</> Markdown
+```
 ---
 
 # DAX & Analytical Logic
@@ -243,7 +242,7 @@ DAX was used to create dynamic measures and retrieve season-specific values base
 ```DAX
 Selected Season =
 SELECTEDVALUE(DimSeason[Season])
-
+```
 Used to identify the season selected through the slicer.
 
 Orange Cap Player
