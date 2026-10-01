@@ -123,76 +123,13 @@ Displays the Purple Cap winner based on the selected season, including:
 
 # Data Sources
 
-The project uses multiple IPL-related source files.
-
-### Match Data
-
-Contains match-level information such as:
-
-- Season
-- City
-- Date
-- Match Type
-- Teams
-- Toss
-- Winner
-- Result
-- Venue
-- Result Margin
-
-### Team Performance Data
-
-Contains:
-
-- Team
-- Home Wins
-- Away Wins
-- Home Matches
-- Away Matches
-- Home Win %
-- Away Win %
-- Home City
-- State
-- Short Name
-- Trophy Winner
-
-### IPL Winners & Runners
-
-Contains:
-
-- Season
-- Winner
-- Runner-up
-- Winning Captain
-- Final Man of the Match
-- Player of the Tournament
-- Venue
-
-### Orange Cap History
-
-Contains season-wise Orange Cap statistics including:
-
-- Player
-- Team
-- Innings
-- Runs
-- Highest Score
-- Average
-- Strike Rate
-- 50s
-- 100s
-- 4s
-- 6s
-
-### Purple Cap History
-
-Contains:
-
-- Season
-- Player
-- Team
-- Matches
-- Wickets
+| Source File / Dataset | Key Information / Columns |
+|---|---|
+| **Match Data** | Season, City, Date, Match Type, Teams, Toss, Winner, Result, Venue, Result Margin |
+| **Team Performance Data** | Team, Home Wins, Away Wins, Home Matches, Away Matches, Home Win %, Away Win %, Home City, State, Short Name, Trophy Winner |
+| **IPL Winners & Runners** | Season, Winner, Runner-up, Winning Captain, Final Man of the Match, Player of the Tournament, Venue |
+| **Orange Cap History** | Season, Player, Team, Innings, Runs, Highest Score, Average, Strike Rate, 50s, 100s, 4s, 6s |
+| **Purple Cap History** | Season, Player, Team, Matches, Wickets |
 
 ---
 
