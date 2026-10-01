@@ -292,8 +292,7 @@ Championship Title =
 SELECTEDVALUE(
     DimSeason[Season],
     "Select Season")
-```
-Creates a dynamic championship heading based on the selected season.
+```Creates a dynamic championship heading based on the selected season.
 ---
 # Dynamic Image Integration
 
