@@ -257,8 +257,7 @@ Returns the Orange Cap winner for the selected season.
 ```
 Purple Cap Player =
 SELECTEDVALUE(
-    'IPL PURPLE CAP WINNERS HISTORY'[Player]
-)
+    'IPL PURPLE CAP WINNERS HISTORY'[Player])
 ```
 Returns the Purple Cap winner for the selected season.
 
@@ -266,8 +265,7 @@ Returns the Purple Cap winner for the selected season.
 ```
 Champion =
 SELECTEDVALUE(
-    'IPL Winners & Runners List'[Winner]
-)
+    'IPL Winners & Runners List'[Winner])
 ```
 Returns the IPL Champion for the selected season.
 
@@ -275,8 +273,7 @@ Returns the IPL Champion for the selected season.
 ```
 Runner Up =
 SELECTEDVALUE(
-    'IPL Winners & Runners List'[Runner Up]
-)
+    'IPL Winners & Runners List'[Runner Up])
 ```
 Returns the Runner-up for the selected season.
 
@@ -284,8 +281,7 @@ Returns the Runner-up for the selected season.
 ```
 Winning Captain =
 SELECTEDVALUE(
-    'IPL Winners & Runners List'[Winning Captain]
-)
+    'IPL Winners & Runners List'[Winning Captain])
 ```
 Returns the Winning Captain for the selected season.
 
@@ -295,8 +291,80 @@ Championship Title =
 "IPL CHAMPIONSHIP — " &
 SELECTEDVALUE(
     DimSeason[Season],
-    "Select Season"
-)
+    "Select Season")
 ```
 Creates a dynamic championship heading based on the selected season.
-                       
+
+# Dynamic Image Integration
+
+Player and team images were integrated using Image URLs rather than storing image files directly inside the Power BI report.
+
+### Implementation Flow
+
+Excel Source
+     │
+     ▼
+Image_URL Column
+     │
+     ▼
+Power BI Data Refresh
+     │
+     ▼
+Data Category → Image URL
+     │
+     ▼
+Image / Card Visual
+     │
+     ▼
+Dynamic Player / Team Image
+
+### Example
+Season | Player | Image_URL
+-------|--------|-----------------------------
+2008   | Player | https://example.com/image.jpg
+2009   | Player | https://example.com/image.jpg
+
+The image URL is associated with the corresponding player or team and can be displayed dynamically when the selected season changes.
+
+### Applications
+Orange Cap player image
+Purple Cap player image
+Player of the Tournament image
+Final Man of the Match image
+Champion team logo
+Runner-up team logo
+
+This approach keeps the report lightweight while allowing visuals to respond dynamically to the selected season.
+
+# UI & Dashboard Integration
+
+A consistent visual design system was implemented across all three dashboard pages.
+
+### Navigation
+
+A reusable left-side navigation panel was created and replicated across:
+
+Page 1 → Match Intelligence
+Page 2 → Team Performance
+Page 3 → Player & Season Intelligence
+
+The navigation provides a consistent user experience while allowing users to move between report pages.
+
+### Slicers & Filters
+
+Interactive slicers were implemented to allow users to filter the dashboard based on relevant dimensions such as:
+
+- Season
+- City
+- Match Type
+- Team
+
+The slicers are connected to the appropriate visuals to provide dynamic filtering.
+
+### Bookmarks
+
+Bookmarks were used for report interactions such as:
+
+- Reset Filters
+- Navigation states
+- Selected visual states
