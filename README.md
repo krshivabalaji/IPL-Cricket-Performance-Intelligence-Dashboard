@@ -406,6 +406,7 @@ Dynamic KPIs / Visuals
 Player / Team / Championship Insights
 ```
 This allows the dashboard to function as an interactive analytical report rather than a collection of static charts.
+
 ---
 # Data Refresh & Portability
 
@@ -431,6 +432,7 @@ DAX Recalculates
 Dashboard Updates
 ```
 The separation between source data and the Power BI report allows the underlying datasets to be updated without rebuilding the dashboard from scratch.
+
 ---
 
 # Key Technical Features and Learnings
@@ -454,6 +456,7 @@ The project demonstrates practical implementation of:
 - Team and championship analysis
 - Consistent dashboard UI
 ---
+
 #  Future Enhancements
 
 Potential future improvements include:
@@ -467,3 +470,11 @@ Potential future improvements include:
 - More player and team image integration
 - Advanced interactive tooltips
 - Drill-through pages for detailed player/team analysis
+---
+
+##Author
+
+#Shivabalaji K R
+
+Technical Business Analyst and Solution Engineer
+Power BI • DAX • SQL • Data Analysis
