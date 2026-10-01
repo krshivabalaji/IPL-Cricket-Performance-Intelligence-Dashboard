@@ -327,12 +327,12 @@ Season | Player | Image_URL
 The image URL is associated with the corresponding player or team and can be displayed dynamically when the selected season changes.
 
 ### Applications
-Orange Cap player image
-Purple Cap player image
-Player of the Tournament image
-Final Man of the Match image
-Champion team logo
-Runner-up team logo
+- Orange Cap player image
+- Purple Cap player image
+- Player of the Tournament image
+- Final Man of the Match image
+- Champion team logo
+- Runner-up team logo
 
 This approach keeps the report lightweight while allowing visuals to respond dynamically to the selected season.
 
@@ -344,9 +344,9 @@ A consistent visual design system was implemented across all three dashboard pag
 
 A reusable left-side navigation panel was created and replicated across:
 
-Page 1 → Match Intelligence
-Page 2 → Team Performance
-Page 3 → Player & Season Intelligence
+- Page 1 → Match Intelligence
+- Page 2 → Team Performance
+- Page 3 → Player & Season Intelligence
 
 The navigation provides a consistent user experience while allowing users to move between report pages.
 
