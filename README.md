@@ -300,7 +300,7 @@ Creates a dynamic championship heading based on the selected season.
 Player and team images were integrated using Image URLs rather than storing image files directly inside the Power BI report.
 
 ### Implementation Flow
-
+```
 Excel Source
      │
      ▼
@@ -317,7 +317,7 @@ Image / Card Visual
      │
      ▼
 Dynamic Player / Team Image
-
+```
 ### Example
 Season | Player | Image_URL
 -------|--------|-----------------------------
