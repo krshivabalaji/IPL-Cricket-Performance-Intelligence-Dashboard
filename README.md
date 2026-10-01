@@ -294,7 +294,7 @@ SELECTEDVALUE(
     "Select Season")
 ```
 Creates a dynamic championship heading based on the selected season.
-
+---
 # Dynamic Image Integration
 
 Player and team images were integrated using Image URLs rather than storing image files directly inside the Power BI report.
@@ -335,7 +335,7 @@ The image URL is associated with the corresponding player or team and can be dis
 - Runner-up team logo
 
 This approach keeps the report lightweight while allowing visuals to respond dynamically to the selected season.
-
+---
 # UI & Dashboard Integration
 
 A consistent visual design system was implemented across all three dashboard pages.
@@ -358,6 +358,7 @@ Interactive slicers were implemented to allow users to filter the dashboard base
 - City
 - Match Type
 - Team
+- State
 
 The slicers are connected to the appropriate visuals to provide dynamic filtering.
 
@@ -368,3 +369,100 @@ Bookmarks were used for report interactions such as:
 - Reset Filters
 - Navigation states
 - Selected visual states
+
+### UI Principles
+- Consistent alignment
+- Reusable side panel
+- Consistent spacing
+- KPI hierarchy
+- Clear section headings
+- Interactive navigation
+- Consistent colour usage
+- Minimal visual clutter
+---
+# Dashboard Interaction Flow
+
+The overall user interaction follows:
+```
+User selects Season
+        │
+        ▼
+Season Slicer
+        │
+        ▼
+DimSeason
+        │
+        ▼
+Related Tables
+        │
+        ▼
+DAX Measures
+        │
+        ▼
+Dynamic KPIs / Visuals
+        │
+        ▼
+Player / Team / Championship Insights
+```
+This allows the dashboard to function as an interactive analytical report rather than a collection of static charts.
+---
+# Data Refresh & Portability
+
+The dashboard was designed to work with external Excel source files.
+
+### Refresh Flow
+```
+Update Excel Data
+       │
+       ▼
+Save Source File
+       │
+       ▼
+Power BI Refresh
+       │
+       ▼
+Power Query Updates
+       │
+       ▼
+DAX Recalculates
+       │
+       ▼
+Dashboard Updates
+```
+The separation between source data and the Power BI report allows the underlying datasets to be updated without rebuilding the dashboard from scratch.
+---
+
+# Key Technical Features and Learnings
+
+The project demonstrates practical implementation of:
+
+- Multiple Excel source files
+- Power Query data preparation
+- Data modelling
+- Table relationships
+- Reference / dimension tables
+- DAX measures
+- SELECTEDVALUE()
+- Dynamic KPIs
+- Interactive slicers
+- Bookmark-based interactions
+- Page navigation
+- Map visualisation
+- Image URL integration
+- Dynamic player profiles
+- Team and championship analysis
+- Consistent dashboard UI
+---
+#  Future Enhancements
+
+Potential future improvements include:
+
+- Ball-by-ball player performance analysis
+- Advanced player comparison
+- Additional team performance metrics
+- More detailed geographic analysis
+- Automated data refresh
+- Additional IPL seasons
+- More player and team image integration
+- Advanced interactive tooltips
+- Drill-through pages for detailed player/team analysis
