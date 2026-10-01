@@ -83,39 +83,12 @@ The third page provides season-driven player and championship insights.
 
 ### Key features
 
-### Orange Cap
-
-Displays the Orange Cap winner based on the selected season, including:
-
-- Player
-- Team
-- Runs
-- Strike Rate
-- Average
-- Highest Score
-- 50s / 100s
-- 4s / 6s
-
-### Purple Cap
-
-Displays the Purple Cap winner based on the selected season, including:
-
-- Player
-- Team
-- Matches
-- Wickets
-
-### Season Awards
-
-- Player of the Tournament
-- Final Man of the Match
-
-### IPL Championship
-
-- Champion
-- Runner-up
-- Winning Captain
-- Final Venue
+| Section | Information Displayed |
+|---|---|
+| **Orange Cap** | Player, Team, Runs, Strike Rate, Average, Highest Score, 50s / 100s, 4s / 6s |
+| **Purple Cap** | Player, Team, Matches, Wickets |
+| **Season Awards** | Player of the Tournament, Final Man of the Match |
+| **IPL Championship** | Champion, Runner-up, Winning Captain, Final Venue |
 
 <img width="857" height="491" alt="Player Stats" src="https://github.com/user-attachments/assets/fde256f7-850b-4cdc-be32-efea328636cc" />
 
