@@ -475,7 +475,6 @@ Potential future improvements include:
 
 ## Author
 
-## Shivabalaji K R
-
-Technical Business Analyst and Solution Engineer
+**Shivabalaji K R**  
+Technical Business Analyst and Solution Engineer  
 Power BI • DAX • SQL • Data Analysis
