@@ -73,15 +73,17 @@ The second page focuses on team-level performance using prepared team summary da
 - Team-level filtering
 - Map-based analysis
 
+<img width="852" height="488" alt="Team Analysis" src="https://github.com/user-attachments/assets/e876c351-7ef0-45a3-98c4-f8bc4221990f" />
+
 ---
 
-## 3️⃣ Player & Season Intelligence
+## 3) Player & Season Intelligence
 
 The third page provides season-driven player and championship insights.
 
 ### Key features
 
-### 🟠 Orange Cap
+### Orange Cap
 
 Displays the Orange Cap winner based on the selected season, including:
 
@@ -94,7 +96,7 @@ Displays the Orange Cap winner based on the selected season, including:
 - 50s / 100s
 - 4s / 6s
 
-### 🟣 Purple Cap
+### Purple Cap
 
 Displays the Purple Cap winner based on the selected season, including:
 
@@ -103,21 +105,23 @@ Displays the Purple Cap winner based on the selected season, including:
 - Matches
 - Wickets
 
-### 🏆 Season Awards
+### Season Awards
 
 - Player of the Tournament
 - Final Man of the Match
 
-### 🏆 IPL Championship
+### IPL Championship
 
 - Champion
 - Runner-up
 - Winning Captain
 - Final Venue
 
+<img width="857" height="491" alt="Player Stats" src="https://github.com/user-attachments/assets/fde256f7-850b-4cdc-be32-efea328636cc" />
+
 ---
 
-# 🗂️ Data Sources
+# Data Sources
 
 The project uses multiple IPL-related source files.
 
@@ -192,7 +196,7 @@ Contains:
 
 ---
 
-# 🔄 Data Preparation & Modelling
+# Data Preparation & Modelling
 
 Multiple source files were imported into Power BI and prepared for analysis.
 
@@ -211,7 +215,7 @@ Multiple source files were imported into Power BI and prepared for analysis.
 
 ---
 
-# 🧩 Data Model
+# Data Model
 
 A dedicated `DimSeason` table was used to provide a consistent season selection for the player and championship analysis.
 
@@ -224,6 +228,70 @@ The model separates different levels of information rather than forcing unrelate
                      │
         ┌────────────┼────────────┐
         │            │            │
-     Matches     Orange Cap   Purple Cap
-                                  │
-                       Winners & Runners
+     Winners     Orange Cap   Purple Cap
+    & Runners
+
+---
+
+# DAX & Analytical Logic
+
+DAX was used to create dynamic measures and retrieve season-specific values based on user selections.
+
+### Selected Season
+
+```DAX
+Selected Season =
+SELECTEDVALUE(DimSeason[Season])
+
+Used to identify the season selected through the slicer.
+
+Orange Cap Player
+Orange Cap Player =
+SELECTEDVALUE(
+    'IPL ORANGE CAP WINNERS HISTORY'[Winners]
+)
+
+Returns the Orange Cap winner for the selected season.
+
+Purple Cap Player
+Purple Cap Player =
+SELECTEDVALUE(
+    'IPL PURPLE CAP WINNERS HISTORY'[Player]
+)
+
+Returns the Purple Cap winner for the selected season.
+
+Champion
+Champion =
+SELECTEDVALUE(
+    'IPL Winners & Runners List'[Winner]
+)
+
+Returns the IPL Champion for the selected season.
+
+Runner-up
+Runner Up =
+SELECTEDVALUE(
+    'IPL Winners & Runners List'[Runner Up]
+)
+
+Returns the Runner-up for the selected season.
+
+Winning Captain
+Winning Captain =
+SELECTEDVALUE(
+    'IPL Winners & Runners List'[Winning Captain]
+)
+
+Returns the Winning Captain for the selected season.
+
+Championship Title
+Championship Title =
+"IPL CHAMPIONSHIP — " &
+SELECTEDVALUE(
+    DimSeason[Season],
+    "Select Season"
+)
+
+Creates a dynamic championship heading based on the selected season.
+                       
