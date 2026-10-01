@@ -245,53 +245,58 @@ SELECTEDVALUE(DimSeason[Season])
 ```
 Used to identify the season selected through the slicer.
 
-Orange Cap Player
-Orange Cap Player =
-SELECTEDVALUE(
-    'IPL ORANGE CAP WINNERS HISTORY'[Winners]
-)
+### Orange Cap Player
 
+```
+Orange Cap Player =
+SELECTEDVALUE('IPL ORANGE CAP WINNERS HISTORY'[Winners])
+```
 Returns the Orange Cap winner for the selected season.
 
-Purple Cap Player
+### Purple Cap Player
+```
 Purple Cap Player =
 SELECTEDVALUE(
     'IPL PURPLE CAP WINNERS HISTORY'[Player]
 )
-
+```
 Returns the Purple Cap winner for the selected season.
 
-Champion
+### Champion
+```
 Champion =
 SELECTEDVALUE(
     'IPL Winners & Runners List'[Winner]
 )
-
+```
 Returns the IPL Champion for the selected season.
 
-Runner-up
+### Runner-up
+```
 Runner Up =
 SELECTEDVALUE(
     'IPL Winners & Runners List'[Runner Up]
 )
-
+```
 Returns the Runner-up for the selected season.
 
-Winning Captain
+### Winning Captain
+```
 Winning Captain =
 SELECTEDVALUE(
     'IPL Winners & Runners List'[Winning Captain]
 )
-
+```
 Returns the Winning Captain for the selected season.
 
-Championship Title
+### Championship Title
+```
 Championship Title =
 "IPL CHAMPIONSHIP — " &
 SELECTEDVALUE(
     DimSeason[Season],
     "Select Season"
 )
-
+```
 Creates a dynamic championship heading based on the selected season.
                        
